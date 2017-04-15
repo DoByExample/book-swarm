@@ -30,3 +30,7 @@ This environment represents multiple VMs. The VMs are all listed
 above with their current state. For more information about a specific
 VM, run `vagrant status NAME`
 ```
+
+##### Cleanup
+
+Once you are done with playing around with swarm you might want to clean up the vm's to free your system resources. You can do this with `vagrant destroy --force` command.

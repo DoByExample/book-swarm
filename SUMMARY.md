@@ -12,7 +12,6 @@
   * [Inspecting a Service](chapter-2/service_inspect.md)
   * [Scale a service](chapter-2/service_scale.md)
   * [Delete a service](chapter-2/service_delete.md)
-  * [Scaling services](chapter-2/scaling.md)
 
 * [3. Multi tier applications ](chapter-3/README.md)
   * [Wordpress](chapter-3/wordpress.md)
