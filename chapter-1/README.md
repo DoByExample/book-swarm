@@ -18,4 +18,5 @@ To run this tutorial, you need the following:
 * Open ports between the hosts
 
 ---
+##### Resources
 https://docs.docker.com/engine/swarm/swarm-tutorial
