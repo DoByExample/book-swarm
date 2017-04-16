@@ -23,7 +23,7 @@ To add a worker to this swarm, run the following command:
 To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
 ```
 The **--advertise-addr** flag configures the manager node to publish its address as 10.0.7.100. The other nodes in the swarm must be able to access the manager at the IP address.  
-The output includes the commands to join new nodes to the swarm. Nodes will join as managers or workers depending on the value for the **--token** flag.
+The output includes the command that contains the token ID of the manager. This command can be used to join new nodes to the swarm. Nodes will join as managers or workers depending on the value for the **--token** flag.
 If you don’t have the command available, you can run the following command on a manager node to retrieve the join command for a worker:
 ```
 manager:~$ docker swarm join-token worker
