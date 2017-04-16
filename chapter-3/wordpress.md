@@ -2,7 +2,20 @@
 
 Wordpress is a popular blogging tool. It is written in PHP and requires a database backend. Let's go ahead and deploy wordpress on our cluster.
 
-We need to create two services here, one for the database (mariadb) and other for frontend (php). Let's call them `db` and `wp` respectively. As wp depends on a database, let's start with creating the `db` service.
+We need to create two services here, one for the database (mariadb) and other for frontend (php). Let's call them `mariadb` and `wp` respectively. Before deploying the services we need to do some preparation.
+
+1. Create secrets for passwords
+```bash
+manager:~$ echo "t00r" | docker secret create root_db_password -
+manager:~$ echo "t00r" | docker secret create wp_db_password -
+```
+
+2. Create overlay network
+```bash
+manager:~$ docker network create -d overlay wp
+```
+
+Now we are ready to deploy wordpress. We start with `mariadb` as it is a dependency for `wp` and must go first.
 
 If you haven’t already, open a terminal and ssh into **manager** node.
 
