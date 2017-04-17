@@ -4,7 +4,7 @@ Once you’ve created a swarm with a manager node, you’re ready to add worker 
 
 1. Open a new terminal and ssh into the **node1**, our worker node for the day
 ```bash
-local_swarm ❯❯❯ vagrant ssh node1
+local-swarm ❯❯❯ vagrant ssh node1
 ...
 node1:~$
 ```

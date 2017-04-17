@@ -6,7 +6,7 @@ After you complete the vagrant setup, you're ready to create a swarm. Make sure 
 
 1. ssh into `manager` vm
 ```
-local_swarm ❯❯❯ vagrant ssh manager
+local-swarm ❯❯❯ vagrant ssh manager
 ...
 manager:~$
 ```

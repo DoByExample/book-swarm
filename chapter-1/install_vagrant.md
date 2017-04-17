@@ -11,15 +11,15 @@ We will be using vagrant to create 3 virtual machines locally which will act as 
 
 ``` bash
 $ vagrant plugin install vagrant-alpine
-$ git clone https://github.com/DoByExample/local_swarm.git
-$ cd local_swarm
+$ git clone https://github.com/DoByExample/local-swarm.git
+$ cd local-swarm
 $ vagrant up
 ```
 
 At this point you will have 3 vm's running which can be verified with `vagrant status`
 
 ```bash
-local_swarm ❯❯❯ vagrant status                                                                                                                               master
+local-swarm ❯❯❯ vagrant status                                                                                                                               master
 Current machine states:
 
 manager                   running (virtualbox)
